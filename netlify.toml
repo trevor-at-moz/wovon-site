@@ -1,0 +1,17 @@
+# Use wovon-site as the Netlify base directory, or copy it to its own repository.
+[build]
+  command = "python3 build.py"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/docs/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/thanks/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

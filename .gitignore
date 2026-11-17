@@ -1,0 +1,6 @@
+dist/
+preview.html
+content.md
+llms.txt
+knowledge-model.json
+.netlify/
